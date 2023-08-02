@@ -1,0 +1,70 @@
+
+run.py: runs everything
+
+in models.py set end = dev for flask and env = prod for heroku
+
+models.py defined the postgres tables
+
+random_walker has the random walker code
+
+submit ideas has the front end functions
+
+templates has the html stuff
+
+
+
+to run: for flask just navigate to python_getting_started 
+then run: 
+source venv310/bin/activate
+export FLASK_APP=run
+flask run
+
+
+
+
+in experiment_parameters.py file set: number of times they can ask for prompts, stopwords, distance, AUT objects, etc...
+
+
+important settings info: 
+git add .
+git commit -m "add description here"
+git push heroku main
+
+
+
+
+(venv310) MacBook-Air-3:python-getting-started taliawise$ python
+>>> from models import db
+>>> db.create_all()
+>>> exit()
+
+
+backup database:
+heroku pg:backups:capture
+heroku pg:backups:download
+pg_restore --verbose --clean --no-acl --no-owner -h localhost -U myuser -d mydb latest.dump
+
+
+https://devcenter.heroku.com/articles/heroku-postgres-import-export
+
+
+To copy view to csv : psql -d mydb -c 'COPY groups TO STDOUT WITH CSV HEADER' > groups.csv
+
+
+Then to check tables in postgresql run \dt
+
+
+qualtrics how to set up prolific connection: https://researcher-help.prolific.co/hc/en-gb/articles/360009224113-Qualtrics-integration-guide
+
+
+qualtrics survey: https://technioniit.eu.qualtrics.com/jfe/form/SV_7WhYIIUkDGoHgCa
+
+
+need to change both models and run to production variables
+
+
+put old sparse_distance_matrix and word_recommender in thesis folder
+
+
+note: aut object: only works for randomizing two aut objects right now (fine for now may be issue in the future)
+

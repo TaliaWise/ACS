@@ -1,0 +1,73 @@
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+<!--
+<script type=text/javascript>
+        $(function() {
+          $('a#test').on('click', function(e) {
+            e.preventDefault()
+            $.getJSON('/background_process_test',
+                function(data) {
+              //do nothing
+            });
+            return false;
+          });
+        });
+</script>
+-->
+
+<!DOCTYPE html>
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <meta content="Webflow" name="generator">
+  <link href="static/css/normalize.css" rel="stylesheet" type="text/css">
+  <link href="static/css/webflow.css" rel="stylesheet" type="text/css">
+
+<link href="static/css/tali-creativity.webflow.css" rel="stylesheet" type="text/css">
+<head>
+<div class="container w-container">
+    <div class="idea-anchor-section wf-section">
+<div>
+
+
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.0/css/bootstrap.min.css" integrity="sha256-/ykJw/wDxMa0AQhHDYfuMEwVb4JHMx9h4jD4XvHqVzU=" crossorigin="anonymous" />
+</head>
+
+<body>
+ 
+
+<div class='container'>
+    You will now complete the same task again with a new object. <br>
+    You have completed {{ attempts }} / 5 tasks so far.
+    
+        <form action="/start" method="POST">
+            <a href="{{ url_for('start_exp') }}" class='w-button'>Start</a>
+        </form>
+
+
+</div>
+ </body>
+</div>
+</div>
+
+
+<!-- this is an attempt to add initials that i scrapped
+<body>
+
+<div class='container'>
+    <h3>write up instructions here, maybe multi page tutorial???????</h3>
+        <form action="/start" method="POST">
+
+    <input name="initials">
+    <a href="{{ url_for('exp') }}"><input type="submit" value='Begin experiment'></a>
+
+
+         <a href="{{ url_for('exp') }}" class='btn btn-primary'>Start</a> 
+
+        </form>
+
+</div>
+
+</body>
+
+-->

@@ -1,0 +1,318 @@
+.section {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+.contains-table {
+  border: 1px solid #000;
+  border-radius: 3px;
+}
+
+.row {
+  padding: 5px;
+  border-top: 1px solid #b4b4b4;
+}
+
+.div-block {
+  border-bottom: 1px solid #b1b1b1;
+}
+
+.row-text {
+  border-bottom: 1px none #000;
+  font-family: Montserrat, sans-serif;
+}
+
+.table-title {
+  font-family: Montserrat, sans-serif;
+  text-align: center;
+}
+
+.contains-submitted {
+  max-width: 48%;
+  margin-top: 25px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #b4b4b4;
+  border-radius: 3px;
+}
+
+.contains-form {
+  min-width: 43%;
+  margin-right: 40px;
+}
+
+.form-label {
+  font-family: Montserrat, sans-serif;
+}
+
+.textarea {
+  min-height: 70px;
+  min-width: 300px;
+  border-radius: 3px;
+  font-family: Montserrat, sans-serif;
+}
+
+.submit-button {
+  border-radius: 5px;
+  font-family: Montserrat, sans-serif;
+}
+
+.ran-out-button {
+  margin-bottom: 0px;
+  border-radius: 5px;
+  background-color: #94a4b2;
+  font-family: Montserrat, sans-serif;
+}
+
+.ran-out-section {
+  margin-top: 50px;
+}
+
+.idea-anchor-section {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.heading {
+  margin-right: 10px;
+  font-family: Montserrat, sans-serif;
+}
+
+.idea-heading {
+  margin-right: 10px;
+  font-family: Montserrat, sans-serif;
+  color: #535353;
+  text-decoration: underline;
+}
+
+
+.idea-help {
+  padding: 3px 10px 5px;
+  font-family: Montserrat, sans-serif;
+  text-align: left;
+}
+
+.idea-help-title {
+  padding-top: 5px;
+  padding-right: 10px;
+  padding-left: 10px;
+  font-family: Montserrat, sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  text-align: left;
+}
+
+.idea-help-notes {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #818181;
+  border-radius: 3px;
+  background-color: #dbdbdb;
+}
+
+.im-done-section {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+.container {
+  margin-top: 110px;
+}
+
+.contains-buttons {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.i-am-done-button {
+  margin-bottom: 0px;
+  border-radius: 5px;
+  background-color: #94a4b2;
+  font-family: Montserrat, sans-serif;
+}
+
+@media screen and (max-width: 767px) {
+  .section {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  .contains-form {
+    width: 50%;
+    margin-right: 20px;
+  }
+
+  .textarea {
+    min-width: 150px;
+  }
+
+  .ran-out-button {
+    margin-bottom: 0px;
+  }
+
+  .idea-anchor-section {
+    padding-left: 10px;
+  }
+
+  .im-done-section {
+    margin-top: 30px;
+    padding-left: 20px;
+  }
+
+  .container {
+    margin-top: 50px;
+  }
+
+  .contains-buttons {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .i-am-done-button {
+    margin-bottom: 0px;
+    background-color: #b3a2a2;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .section {
+    padding-right: 5px;
+    padding-left: 0px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -webkit-flex-direction: column-reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .contains-submitted {
+    max-width: 90%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+
+  .contains-form {
+    width: 90%;
+    margin-right: 0px;
+  }
+
+  .submit-button {
+    margin-right: 10px;
+  }
+
+  .ran-out-button {
+    margin-bottom: 0px;
+  }
+
+  .idea-anchor-section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+  }
+
+  .heading {
+    margin-top: 0px;
+    margin-bottom: 2px;
+  }
+
+  .idea-heading {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  .idea-help-notes {
+    width: 90%;
+  }
+
+  .im-done-section {
+    margin-top: 12px;
+  }
+
+  .contains-buttons {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .i-am-done-button {
+    margin-bottom: 0px;
+  }
+}

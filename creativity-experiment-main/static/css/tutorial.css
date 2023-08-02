@@ -1,0 +1,194 @@
+/* Copyright (C) 2021  TranslateGreat LLC.  All rights reserved. */
+
+
+
+/* exit tutorial btn */
+.exit-tutorial-btn {
+    right: 2%;
+    top: 2%;
+    color: grey;
+    z-index: 2147483647;
+    font-size: 17px;
+    cursor: pointer;
+ /*   text-decoration: underline; */
+    text-align: right;
+    margin-bottom: 30px;
+    display:none;
+}
+.exit-tutorial-btn:hover {
+    color: black;
+}
+
+/* spotlight window */
+#tutorial-spotlight {
+    position: absolute;
+    background-color: transparent;
+    z-index: 2147483647;
+    pointer-events: none;
+    border: 3px dashed black;
+    border-radius: 4px;
+    outline: rgb(0 0 0 / 18%) solid 50000px;
+    transition: 0.3s ease-in-out;
+}
+
+/* tutorial modal spotlight */
+#tutorial-modal-div {
+    display: none;
+    position: absolute;
+    left: calc(50% - 250px);
+    top: calc(50% - 150px);
+    height: auto;
+    width: 40%;
+    padding: 20px;
+    font-size: 21px;
+    line-height: 30x;
+    background-color: white;
+    box-shadow: 0px 0px 5px 3px #d0d0d0;
+    border-radius: 5px;
+    z-index: 2147483647;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* tutorial tooltip */
+#spotlight-tooltip-dynamic-content-container {
+    font-size: 21px;
+    padding: 10px;
+    padding-bottom: 5px;
+
+}
+#spotlight-tooltip-btn-container {
+    display: flex;
+    justify-content: space-between; 
+    margin-top: 40px;
+    font-size: 16px;
+}
+.spotlight-tooltip-nav-btn {
+    background-color: #dadada;
+    color: black;
+    border-radius: 3px;
+    cursor: pointer;
+    padding: 7px 15px 7px 15px;
+}
+#spotlight-tooltip-btn-previous {
+    margin-right: 5px;
+}
+#spotlight-tooltip-btn-next {
+    margin-left: 5px;
+}
+
+/* tutorial veil */
+.tutorial-veil {
+    position: absolute;
+    background-color: transparent;
+    z-index: 2147483646;
+}
+
+
+/* tutorial checklist */
+#tutorial-checklist-title-container {
+    display: flex;
+    position: 'fixed';
+    background-color: 'white';
+    color: '#26323d';
+    border-radius: '3px';
+    z-index: 2147483647;
+    width: '300px';
+    height: 'auto';
+    max-height: '325px';
+    overflow: 'hidden';
+    right: '3%';
+    top: 'calc(100% - 360px)';
+    padding: '15px';
+    cursor: 'all-scroll';
+    -ms-overflow-style: 'none';  /* IE and Edge */
+    scrollbar-width: 'none';  /* Firefox */
+}
+#tutorial-checklist-title {
+    width: 90%;
+    margin-right: 10px;
+}
+
+#tutorial-checklist-collapse {
+    cursor: pointer;
+    margin-left: 0px;
+    width: 10%;
+    transform: scale(1.3) rotate(0deg);
+    background-image: url("http://c.sitetran.com/down-caret.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: 0.3s;
+}
+#tutorial-checklist-collapse.open {
+    transform: scale(1.3) rotate(540deg);
+}
+#checklist-progress-bar-container {
+    width: 100%; 
+    height: 10px; 
+    border-radius: 3px; 
+    margin-top: 5px; 
+    overflow: hidden; 
+    margin-bottom: 5px;
+    background-color: #ffc355;
+}
+#checklist-progress-bar {
+    height: 100%;
+    width: 100%;
+    background-color: #93a6ff; 
+    transition: 0.5s ease-in-out;
+}
+/* checklist items */
+#tutorial-checklist-container {
+    position: fixed;
+    background-color: white;
+    color: #263223;
+    border-radius: 3px;
+    z-index: 2147483647;
+    width: 300px;
+    height: auto;
+    max-height: 325px;
+    overflow: hidden;
+    right: 3%;
+    top: calc(100% - 360px);
+    padding: 15px;
+    cursor: all-scroll;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+
+#checklist-items-container {
+    overflow-y: scroll;
+    padding-right: 5px;
+    padding-left: 5px;
+    max-height: 250px;
+    width: 100%;
+    transform: 0.3s;
+    cursor: default;
+}
+.spotlight-checklist-tutrial-item {
+    box-shadow: #d6d3d3 0px 0px 4px 2px;
+    margin-top: 9px;
+    margin-bottom: 9px;
+    padding: 7px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    max-width: 300px;
+}
+.svg-checklist-wrapper {
+    width: 20px;
+    height: 20px;
+    display: flex;
+}
+.svg-checkmark {
+    border: 1px solid #8e8e8e;
+    border-radius: 50%;
+}
+.checklist-item-text {
+    margin-bottom: 0px; 
+    width: 93%;
+    margin-left: 10px; 
+    color: #8e8e8e;
+    font-size: 15px
+}
+

@@ -1,0 +1,60 @@
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+<!--
+<script type=text/javascript>
+        $(function() {
+          $('a#test').on('click', function(e) {
+            e.preventDefault()
+            $.getJSON('/background_process_test',
+                function(data) {
+              //do nothing
+            });
+            return false;
+          });
+        });
+</script>
+-->
+
+<!DOCTYPE html>
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <meta content="Webflow" name="generator">
+  <link href="static/css/normalize.css" rel="stylesheet" type="text/css">
+  <link href="static/css/webflow.css" rel="stylesheet" type="text/css">
+
+<!-- <link href="static/css/tali-creativity.webflow.css" rel="stylesheet" type="text/css"> -->
+<head>
+<div class="container w-container">
+    <div class="idea-anchor-section wf-section">
+<div>
+
+
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.0/css/bootstrap.min.css" integrity="sha256-/ykJw/wDxMa0AQhHDYfuMEwVb4JHMx9h4jD4XvHqVzU=" crossorigin="anonymous" />
+</head>
+
+<body>
+
+ 
+
+<div class='container' style="margin-top:110px;width:70%;">
+    <p>You will be asked to produce as many creative uses as you can think of, which are different from the normal use, for five common objects. <br>
+      <br>
+    For example: the common use for a newspaper is reading, but it could also be used for "swatting flies", "to line drawers", "to make a paper hat" and so on. Please try to produce possible uses which are different from the normal one and different in kind from each other. The creative alternative uses should be short phrases.<br>
+    <br>
+When you run out of ideas, you should click on get recommendation, which will show you a word that might help you find new ideas. You can then add and submit these new ideas. <br>
+<br>
+ Once you run out of ideas again, click on ‘I am completely out of ideas’.<br>
+<br>
+Before the task starts, an explanation of the task will appear.</p>
+
+        <form action="/start" method="POST">
+            <a href="{{ url_for('start_exp') }}" class='w-button'>Start</a>
+        </form>
+</div>
+
+ </body>
+</div>
+</div>
+
+
